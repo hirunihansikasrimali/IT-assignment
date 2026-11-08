@@ -1,0 +1,375 @@
+/* General Settings */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #080808;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+
+/* Navigation Bar */
+
+header {
+    background: #111;
+    padding: 18px 8%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #252525;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+}
+
+.logo span {
+    color: #ff2020;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ff2020;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 25px;
+    cursor: pointer;
+    color: #ff2020;
+}
+
+
+/* Home Section */
+
+.home {
+    min-height: 90vh;
+    padding: 80px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.home-content {
+    max-width: 600px;
+}
+
+.welcome {
+    color: #ff2020;
+    letter-spacing: 3px;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.home h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.home h1 span {
+    color: #ff2020;
+}
+
+.home h2 {
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+.description {
+    color: #aaa;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+
+/* Buttons */
+
+.home-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-block;
+    background: #ff2020;
+    color: white;
+    padding: 13px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+    border: 1px solid #ff2020;
+}
+
+.btn:hover {
+    background: transparent;
+    color: #ff2020;
+    transform: translateY(-3px);
+}
+
+.btn-outline {
+    background: transparent;
+    color: #ff2020;
+}
+
+
+/* Social Icons */
+
+.social-icons {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 25px;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: #ff2020;
+}
+
+
+/* Profile Icon */
+
+.profile-container {
+    text-align: center;
+}
+
+.profile-icon {
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    background: #171717;
+    border: 5px solid #ff2020;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    color: #ff2020;
+    box-shadow: 0 0 35px rgba(255, 32, 32, 0.25);
+    margin-bottom: 20px;
+}
+
+.profile-container h3 {
+    font-size: 23px;
+}
+
+.profile-container p {
+    color: #aaa;
+    margin-top: 8px;
+}
+
+
+/* Common Sections */
+
+.section {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 35px;
+    margin-bottom: 40px;
+}
+
+.section-title span {
+    color: #ff2020;
+}
+
+
+/* About */
+
+.about-content {
+    max-width: 750px;
+    margin: auto;
+    padding: 30px;
+    background: #151515;
+    border-left: 4px solid #ff2020;
+    border-radius: 8px;
+}
+
+.about-content p {
+    color: #bbb;
+    line-height: 2;
+}
+
+
+/* Skills */
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.skill-card {
+    background: #151515;
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid #292929;
+    transition: 0.3s;
+}
+
+.skill-card i {
+    color: #ff2020;
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.skill-card:hover {
+    border-color: #ff2020;
+    transform: translateY(-7px);
+}
+
+
+/* Projects */
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.project-card {
+    background: #151515;
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid #292929;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    border-color: #ff2020;
+    transform: translateY(-7px);
+}
+
+.project-card i {
+    font-size: 35px;
+    color: #ff2020;
+    margin-bottom: 20px;
+}
+
+.project-card h3 {
+    margin-bottom: 15px;
+}
+
+.project-card p {
+    color: #aaa;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.project-card span {
+    color: #ff5555;
+    font-size: 13px;
+}
+
+
+/* Contact */
+
+.contact-text {
+    color: #aaa;
+    margin-bottom: 25px;
+    line-height: 1.8;
+}
+
+
+/* Footer */
+
+footer {
+    background: #111;
+    padding: 25px;
+    text-align: center;
+    color: #888;
+    line-height: 2;
+}
+
+footer span {
+    color: #ff2020;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+
+    .menu-icon {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: #111;
+        flex-direction: column;
+        text-align: center;
+        padding: 25px;
+        gap: 25px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .home {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 60px 7%;
+    }
+
+    .home h1 {
+        font-size: 35px;
+    }
+
+    .profile-icon {
+        width: 170px;
+        height: 170px;
+        font-size: 75px;
+    }
+
+    .home-buttons,
+    .social-icons {
+        justify-content: center;
+    }
+
+    .skills-container,
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
+
+    .section {
+        padding: 60px 7%;
+    }
+}v
